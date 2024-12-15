@@ -99,7 +99,7 @@ var editTask=function(){
   }
 
     //toggle .edit-mode on the parent.
-    listItem.classList.toggle("edit-mode");
+  listItem.classList.toggle("edit-mode");
 };
 
 
@@ -111,9 +111,7 @@ var deleteTask=function(){
   var ul=listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
-
 }
-
 
 //Mark task completed
 var taskCompleted=function(){
@@ -123,7 +121,6 @@ var taskCompleted=function(){
   var listItem=this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
